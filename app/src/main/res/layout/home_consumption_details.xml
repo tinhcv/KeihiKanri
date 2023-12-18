@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:gravity="center"
+        android:background="@drawable/border_no_fill"
+        android:textColor="@color/black"
+        android:layout_weight="0.3"
+        android:layout_marginStart="9dp"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="type"
+        android:textSize="8pt"
+        android:gravity="center"
+        android:background="@drawable/border_no_fill"
+        android:textColor="@color/black"
+        android:layout_weight="0.3"
+        android:layout_marginStart="9dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+    android:id="@+id/trend"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    app:srcCompat="@drawable/moving_black_48dp"
+    app:tint="#00FFFFFF" />
+
+<!--        android:rotation="180"-->
+<!--        android:rotationX="0"-->
+<!--        android:rotationY="180"-->
+<!--        app:tint="#F00"-->
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="cost"
+        android:textSize="8pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:layout_marginStart="9dp"
+        android:layout_gravity="center" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/date"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="0.2"-->
+<!--        android:text="date"-->
+<!--        android:gravity="center"-->
+<!--        android:background="@drawable/border_no_fill"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginStart="9dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginEnd="10dp"/>-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSeeMore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="@drawable/visibility_black_48dp"
+        app:backgroundTint="@color/black"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

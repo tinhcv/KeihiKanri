@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/bottom_navigation_bar"
+    android:background="@drawable/border_bottom_bar" >
+
+    <!--            Button Home -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@null"
+            app:srcCompat="@drawable/home_black_48dp"
+            android:onClick="toHomeState"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textSize="6pt"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--            Button Transactions -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnTrans"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@null"
+            app:srcCompat="@drawable/description_black_48dp"
+            android:onClick="toTransactionState"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:id="@+id/txtTrans"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Trans"
+            android:textAlignment="center"
+            android:textSize="6pt"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--            Button Add -->
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/add_circle_black_48dp"
+        app:tint="@color/gray"
+        android:onClick="toAddState" />
+
+    <!--            Button Wallets -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnStats"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@null"
+            app:srcCompat="@drawable/bar_chart_black_48dp"
+            android:onClick="toStatsState"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:id="@+id/txtStats"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Stats"
+            android:textAlignment="center"
+            android:textSize="6pt"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--            Button Profile -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@null"
+            app:srcCompat="@drawable/account_circle_black_48dp"
+            android:onClick="toProfileState"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textSize="6pt"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

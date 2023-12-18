@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".homeState.HomeStateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/balanceNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="placeholder"
+            android:textSize="20pt"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="bottom"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/balanceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:text="Total Balance (VND)"
+            android:textSize="8pt"
+            android:textColor="#000000"
+            android:gravity="top"
+            android:layout_marginStart="10dp"
+            />
+
+        <View
+            android:background="#FF000000"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/monthlyStatistic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            tools:listitem="@layout/home_node_monthly_info"
+            />
+
+        <!--        Bottom Navigation Bar -->
+        <include
+            android:id="@+id/bottom_navigation_bar"
+            layout="@layout/menu_bottom_bar"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

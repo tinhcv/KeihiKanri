@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "176345019053",
+    "project_id": "qlct-c01ed",
+    "storage_bucket": "qlct-c01ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176345019053:android:2d2b370d726ced56a34c24",
+        "android_client_info": {
+          "package_name": "ki1nhom2.btl.qlct"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176345019053-cd4r1b00mfctgn0eau9indk9ega7kq8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwej5GRRa2Gte0LvGCB9UzZAk2ZZpRF4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176345019053-cd4r1b00mfctgn0eau9indk9ega7kq8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

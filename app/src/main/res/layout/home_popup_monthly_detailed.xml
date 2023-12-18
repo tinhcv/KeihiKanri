@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="10dp"
+android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/secondary_color"
+        app:cardCornerRadius="5dp" >
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="Thông tin chi tiết"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="8pt"
+                    android:gravity="start"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="9dp"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/edit_black_48dp"
+                    app:iconTint="@color/white"
+                    android:onClick="toTransactionState"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tên khoản chi"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="0.3"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.3"
+                android:hint="name"
+                android:textColorHint="@color/white"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:layout_marginStart="9dp"
+                android:background="@drawable/border_no_fill"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Loại khoản chi"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="0.3"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/type"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.3"
+                android:hint="type"
+                android:textColorHint="@color/white"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:background="@drawable/border_no_fill"
+                android:layout_marginStart="9dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="Ngày thanh toán"
+                android:textColor="@color/white"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.3"
+                android:hint="date"
+                android:textColorHint="@color/white"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:background="@drawable/border_no_fill"
+                android:layout_marginStart="9dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Chi phí (VND)"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="0.3"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/cost"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.3"
+                android:hint="cost"
+                android:textColorHint="@color/white"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:background="@drawable/border_no_fill"
+                android:layout_marginStart="9dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="description"
+            android:textColorHint="@color/white"
+            android:textSize="8pt"
+            android:background="@drawable/border_no_fill"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:text="Main Activity"
+            android:textSize="10pt"
+            android:textColor="@color/secondary_color"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/expenditureNameMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--        Bottom Navigation Bar -->
+        <include
+            android:id="@+id/bottom_navigation_bar"
+            layout="@layout/menu_bottom_bar"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
